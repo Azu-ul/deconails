@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deco Nails | Manicura en Mar del Plata: servicios, precios y turnos</title>
+    <meta name="description"
+        content="Deco Nails, estudio de uñas en Mar del Plata. Mirá servicios y precios, horarios, dirección y reservá tu turno por WhatsApp.">
+    <meta name="theme-color" content="#FAF5F0">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:title" content="Deco Nails | Manicura en Mar del Plata">
+    <meta property="og:description" content="Servicios y precios, horarios, dirección y turnos por WhatsApp.">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23653B49'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23FAF5F0' font-family='Georgia,serif'%3ED%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Marca que JavaScript está disponible (evita parpadeos del menú móvil) -->
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Ilustraciones: manos con uñas dibujadas en SVG (reemplazables por fotografías reales) -->
+    <svg class="svg-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <!-- Dedo y uña. Los colores se controlan con --skin y --nail desde el CSS -->
+            <g id="finger">
+                <path d="M0 80C0 36 18 0 40 0s40 36 40 80v260H0z" fill="var(--skin)" />
+                <path d="M10 92V48C10 24 22 8 40 8s30 16 30 40v44c0 4-3 6-6 6H16c-3 0-6-2-6-6z" fill="var(--nail)" />
+            </g>
+            <g id="hand">
+                <use href="#finger" transform="translate(25 70)" />
+                <use href="#finger" transform="translate(115 40)" />
+                <use href="#finger" transform="translate(205 30)" />
+                <use href="#finger" transform="translate(295 55)" />
+            </g>
+
+            <!-- Detalles reutilizables -->
+            <g id="shine">
+                <path d="M19 42C19 29 25 19 35 16" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="4"
+                    stroke-linecap="round" />
+            </g>
+            <g id="tip">
+                <path d="M10 48C10 24 22 8 40 8s30 16 30 40C56 38 24 38 10 48z" fill="#FBF7F2" />
+            </g>
+            <g id="milk">
+                <path d="M10 66h60v26c0 4-3 6-6 6H16c-3 0-6-2-6-6z" fill="#fff" fill-opacity=".28" />
+            </g>
+            <g id="chrome">
+                <path d="M10 78 44 10h10L10 94z" fill="#fff" fill-opacity=".6" />
+                <path d="M44 98 70 52v26L58 98z" fill="#8E8589" fill-opacity=".35" />
+            </g>
+            <g id="flower">
+                <g fill="#D8A9AD">
+                    <circle cx="0" cy="-6" r="5.5" />
+                    <circle cx="6" cy="-2" r="5.5" />
+                    <circle cx="4" cy="5" r="5.5" />
+                    <circle cx="-4" cy="5" r="5.5" />
+                    <circle cx="-6" cy="-2" r="5.5" />
+                </g>
+                <circle r="3" fill="#653B49" />
+            </g>
+            <g id="gem">
+                <path d="M0-7 6 0 0 7-6 0z" fill="#FAF5F0" />
+                <path d="M0-7 6 0H0z" fill="#D8A9AD" />
+            </g>
+
+            <!-- Capas por posición de cada uña -->
+            <g id="layer-shine">
+                <use href="#shine" transform="translate(25 70)" />
+                <use href="#shine" transform="translate(115 40)" />
+                <use href="#shine" transform="translate(205 30)" />
+                <use href="#shine" transform="translate(295 55)" />
+            </g>
+            <g id="layer-tip">
+                <use href="#tip" transform="translate(25 70)" />
+                <use href="#tip" transform="translate(115 40)" />
+                <use href="#tip" transform="translate(205 30)" />
+                <use href="#tip" transform="translate(295 55)" />
+            </g>
+            <g id="layer-milk">
+                <use href="#milk" transform="translate(25 70)" />
+                <use href="#milk" transform="translate(115 40)" />
+                <use href="#milk" transform="translate(205 30)" />
+                <use href="#milk" transform="translate(295 55)" />
+            </g>
+            <g id="layer-chrome">
+                <use href="#chrome" transform="translate(25 70)" />
+                <use href="#chrome" transform="translate(115 40)" />
+                <use href="#chrome" transform="translate(205 30)" />
+                <use href="#chrome" transform="translate(295 55)" />
+                <use href="#gem" transform="translate(155 122)" />
+                <use href="#gem" transform="translate(335 137)" />
+            </g>
+            <g id="layer-flowers">
+                <use href="#flower" transform="translate(55 132)" />
+                <use href="#flower" transform="translate(85 108) scale(.6)" />
+                <use href="#flower" transform="translate(235 92)" />
+                <use href="#flower" transform="translate(325 93) scale(.6)" />
+                <use href="#flower" transform="translate(345 120)" />
+            </g>
+        </defs>
+    </svg>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#inicio" aria-label="Deco Nails, ir al inicio">Deco <em>Nails</em></a>
+
+            <nav id="site-nav" class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios y precios</a></li>
+                    <li><a href="#horarios">Horarios y ubicación</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn--primary btn--small header-cta" href="#reservar" data-whatsapp>Reservar turno</a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Abrir menú</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="contenido">
+
+        <!-- A. HERO -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Estudio de uñas · Mar del Plata</p>
+                    <h1 id="hero-title">Tus uñas, <em>tu momento.</em></h1>
+                    <p class="lead">Manicura cuidada, diseños personalizados y un espacio para dedicarte un ratito a
+                        vos.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn--primary" href="#servicios">Ver servicios y precios</a>
+                        <a class="btn btn--secondary" href="#reservar" data-whatsapp>Reservar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <figure class="hero-art">
+                    <img class="art art--hero"
+                        src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&h=800&q=80"
+                        width="400" height="400" alt="Manos con uñas en rosa suave, brillantes y prolijas">
+                </figure>
+            </div>
+
+            <ul class="container hero-facts">
+                <li>Atención con turno previo.</li>
+                <li>Ubicación en Mar del Plata.</li>
+                <li>Servicios y precios publicados en la web.</li>
+            </ul>
+        </section>
+
+        <!-- C. SERVICIOS Y PRECIOS -->
+        <section class="section section--services" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow">Lista de precios</p>
+                    <h2 id="servicios-title">Servicios y precios</h2>
+                    <p class="section-intro">Precios en pesos argentinos. Valores ilustrativos del proyecto conceptual.
+                    </p>
+                </header>
+
+                <ul class="service-list">
+                    <li class="service">
+                        <h3 class="service__name">Manicura tradicional</h3>
+                        <p class="service__desc">Limado, cuidado de cutículas e hidratación, con esmaltado tradicional.
+                        </p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span>$8.000</p>
+                        <p class="service__time">Duración: <strong>30 min</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Manicura tradicional">Consultar o reservar<span class="visually-hidden">
+                                Manicura tradicional</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Esmaltado semipermanente</h3>
+                        <p class="service__desc">Esmaltado en gel de larga duración, con preparación de la uña y brillo
+                            parejo.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span>$12.000</p>
+                        <p class="service__time">Duración: <strong>60 min</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Esmaltado semipermanente">Consultar o reservar<span class="visually-hidden">
+                                Esmaltado semipermanente</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Kapping gel</h3>
+                        <p class="service__desc">Capa de gel sobre la uña natural para reforzarla y darle resistencia,
+                            con acabado prolijo.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span>$16.000</p>
+                        <p class="service__time">Duración: <strong>90 min</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Kapping gel">Consultar o reservar<span class="visually-hidden"> Kapping
+                                gel</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Soft gel</h3>
+                        <p class="service__desc">Extensión con gel flexible para ganar largo y forma, con un resultado
+                            liviano y natural.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span>$20.000</p>
+                        <p class="service__time">Duración: <strong>120 min</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Soft gel">Consultar o reservar<span class="visually-hidden"> Soft
+                                gel</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Retiro de semipermanente</h3>
+                        <p class="service__desc">Retiro cuidadoso de un semipermanente realizado en el estudio.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span>$4.000</p>
+                        <p class="service__time">Duración: <strong>30 min</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Retiro de semipermanente">Consultar o reservar<span class="visually-hidden">
+                                Retiro de semipermanente</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Nail art simple</h3>
+                        <p class="service__desc">Detalles sencillos sobre el servicio de base: líneas, puntos,
+                            francesitas o pequeños motivos.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span><span
+                                class="price-from">Desde</span>$2.000<span class="price-note">adicionales</span></p>
+                        <p class="service__time">Duración: <strong>según el diseño</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Nail art simple">Consultar o reservar<span class="visually-hidden"> Nail art
+                                simple</span></a>
+                    </li>
+
+                    <li class="service">
+                        <h3 class="service__name">Nail art personalizado</h3>
+                        <p class="service__desc">Diseño a medida a partir de tu referencia: florales, cromados, texturas
+                            o detalles delicados.</p>
+                        <p class="service__price"><span class="visually-hidden">Precio: </span><span
+                                class="price-from">Desde</span>$4.000<span class="price-note">adicionales</span></p>
+                        <p class="service__time">Duración: <strong>según el diseño</strong></p>
+                        <a class="btn btn--secondary btn--small service__cta" href="#reservar" data-whatsapp
+                            data-service="Nail art personalizado">Consultar o reservar<span class="visually-hidden">
+                                Nail art personalizado</span></a>
+                    </li>
+                </ul>
+
+                <p class="note">Los precios de nail art son adicionales al servicio de base. Consultá por diseños
+                    específicos antes de reservar.</p>
+                <p class="fineprint">Las duraciones son orientativas y pueden variar según el estado de las uñas y el
+                    diseño elegido.</p>
+            </div>
+        </section>
+
+        <!-- E + F. HORARIOS Y UBICACIÓN -->
+        <div class="section section--info">
+            <div class="container info-grid">
+
+                <section id="horarios" aria-labelledby="horarios-title">
+                    <p class="eyebrow">Cuándo vení</p>
+                    <h2 id="horarios-title">Horarios de atención</h2>
+
+                    <table class="hours">
+                        <caption class="visually-hidden">Horarios de atención por día de la semana</caption>
+                        <thead class="visually-hidden">
+                            <tr>
+                                <th scope="col">Día</th>
+                                <th scope="col">Horario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="is-closed">
+                                <th scope="row">Lunes</th>
+                                <td>Cerrado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Martes</th>
+                                <td>10:00 a 18:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Miércoles</th>
+                                <td>10:00 a 18:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jueves</th>
+                                <td>10:00 a 19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Viernes</th>
+                                <td>10:00 a 19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sábado</th>
+                                <td>10:00 a 16:00</td>
+                            </tr>
+                            <tr class="is-closed">
+                                <th scope="row">Domingo</th>
+                                <td>Cerrado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="note">Trabajamos únicamente con turno previo. Los horarios pueden variar según la
+                        disponibilidad.</p>
+                </section>
+
+                <section id="ubicacion" aria-labelledby="ubicacion-title">
+                    <p class="eyebrow">Cómo llegar</p>
+                    <h2 id="ubicacion-title">Dónde encontrarnos</h2>
+
+                    <address class="address">
+                        <span id="address-text">Calle Güemes 2450, Mar del Plata, Buenos Aires</span>
+                    </address>
+                    <p class="zone">Zona: barrio Güemes.</p>
+
+                    <div class="location-actions">
+                        <a class="btn btn--primary" href="#ubicacion" data-directions>Cómo llegar</a>
+                        <button class="btn btn--secondary" type="button" data-copy-address>Copiar dirección</button>
+                    </div>
+                    <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+
+                    <figure class="map">
+                        <iframe title="Mapa de Google Maps con la ubicación de Deco Nails"
+                            src="https://www.google.com/maps?q=G%C3%BCemes%202450%2C%20Mar%20del%20Plata%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                        <figcaption>El botón «Cómo llegar» abre la dirección en Google Maps.</figcaption>
+                    </figure>
+
+                    <p class="note">Recordá reservar con anticipación: no hay atención sin turno previo.</p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- G. CÓMO RESERVAR -->
+        <section class="section section--dark" id="reservar" aria-labelledby="reservar-title">
+            <div class="container booking">
+                <header class="section-head">
+                    <p class="eyebrow">Turnos por WhatsApp</p>
+                    <h2 id="reservar-title">Reservá tu próximo turno</h2>
+                </header>
+
+                <ol class="steps">
+                    <li><span class="steps__num" aria-hidden="true">1</span>Elegí el servicio que querés realizarte.
+                    </li>
+                    <li><span class="steps__num" aria-hidden="true">2</span>Consultá disponibilidad por WhatsApp.</li>
+                    <li><span class="steps__num" aria-hidden="true">3</span>Confirmá el día y horario con el estudio.
+                    </li>
+                </ol>
+
+                <div class="booking-panel">
+                    <label for="service-select">Servicio que querés consultar</label>
+                    <select id="service-select" name="servicio">
+                        <option value="">Todavía no lo sé</option>
+                        <option>Manicura tradicional</option>
+                        <option>Esmaltado semipermanente</option>
+                        <option>Kapping gel</option>
+                        <option>Soft gel</option>
+                        <option>Retiro de semipermanente</option>
+                        <option>Nail art simple</option>
+                        <option>Nail art personalizado</option>
+                    </select>
+
+                    <p class="message-preview" id="message-preview" aria-live="polite"></p>
+
+                    <a class="btn btn--light" id="booking-link" href="#reservar" data-whatsapp>Consultar disponibilidad
+                        por WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. GALERÍA -->
+        <section class="section section--gallery" id="galeria" aria-labelledby="galeria-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow">Inspiración</p>
+                    <h2 id="galeria-title">Galería de trabajos</h2>
+                    <p class="section-intro">Estilos de referencia. Son ilustraciones del proyecto conceptual y no
+                        corresponden a trabajos de una profesional real.</p>
+                </header>
+
+                <div class="gallery">
+                    <figure>
+                        <img class="art art--nude"
+                            src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?auto=format&fit=crop&w=800&h=800&q=80"
+                            width="400" height="400" loading="lazy"
+                            alt="Uñas nude minimalista: un rosa claro liso y prolijo">
+                        <figcaption>Nude minimalista</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="art art--french"
+                            src="https://plus.unsplash.com/premium_photo-1670348051093-a3f94b408bcb?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" width="400"
+                            height="300" loading="lazy" alt="Mano con manicura clara y blanca">
+                        <figcaption>Francesitas</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="art art--rose"
+                            src="https://images.unsplash.com/photo-1709839454771-704f7af2ce0c?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                            width="400" height="400" loading="lazy" alt="Uñas en rosa translúcido sobre tela blanca">
+                        <figcaption>Rosa translúcido</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="art art--burgundy"
+                            src="https://images.unsplash.com/photo-1747095502856-ce86ee935741?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                            width="400" height="400" loading="lazy"
+                            alt="Uñas oscuras con efecto carey y un anillo dorado">
+                        <figcaption>Bordó elegante</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="art art--floral"
+                            src="https://images.pexels.com/photos/39345499/pexels-photo-39345499.jpeg"
+                            width="400" height="400" loading="lazy" alt="Mano con manicura sosteniendo una flor">
+                        <figcaption>Nail art floral</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="art art--chrome"
+                            src="https://images.unsplash.com/photo-1769687209448-025548dfca8b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                            width="400" height="400" loading="lazy"
+                            alt="Uñas malva con detalles plateados y brillantes">
+                        <figcaption>Cromados y detalles delicados</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- H. PREGUNTAS FRECUENTES -->
+        <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-wrap">
+                <header class="section-head">
+                    <p class="eyebrow">Dudas comunes</p>
+                    <h2 id="faq-title">Preguntas frecuentes</h2>
+                </header>
+
+                <ul class="faq">
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q1" aria-expanded="false"
+                                aria-controls="faq-a1">¿Necesito reservar un turno?<span class="faq__icon"
+                                    aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+                            <p>Sí. Trabajamos únicamente con turno previo. Escribinos por WhatsApp para consultar
+                                disponibilidad y confirmar el día y el horario.</p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q2" aria-expanded="false"
+                                aria-controls="faq-a2">¿Cuánto duran los servicios?<span class="faq__icon"
+                                    aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+                            <p>De forma orientativa: manicura tradicional 30 minutos, semipermanente 60, kapping gel 90,
+                                soft gel 120 y retiro 30. El nail art depende del diseño.</p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q3" aria-expanded="false"
+                                aria-controls="faq-a3">¿Puedo llevar una referencia para mi nail art?<span
+                                    class="faq__icon" aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+                            <p>Sí. Podés enviarnos la imagen por WhatsApp antes del turno o mostrarla ese día. Así
+                                confirmamos si se puede realizar y cuánto suma al servicio de base.</p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q4" aria-expanded="false"
+                                aria-controls="faq-a4">¿Puedo reservar solo para retirar el esmaltado?<span
+                                    class="faq__icon" aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a4" role="region" aria-labelledby="faq-q4">
+                            <p>Sí. El retiro de un semipermanente realizado en el estudio cuesta $4.000 y dura unos 30
+                                minutos. Si el trabajo se hizo en otro lugar, consultanos por WhatsApp antes de
+                                reservar.</p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q5" aria-expanded="false"
+                                aria-controls="faq-a5">¿Cómo puedo consultar disponibilidad?<span class="faq__icon"
+                                    aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a5" role="region" aria-labelledby="faq-q5">
+                            <p>Tocá cualquier botón «Consultar o reservar» o «Reservar por WhatsApp»: se abre un chat
+                                con el mensaje ya escrito. Atendemos de martes a sábado en los horarios publicados.</p>
+                        </div>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__q"><button class="faq__trigger" type="button" id="faq-q6" aria-expanded="false"
+                                aria-controls="faq-a6">¿Los precios incluyen nail art?<span class="faq__icon"
+                                    aria-hidden="true"></span></button></h3>
+                        <div class="faq__panel" id="faq-a6" role="region" aria-labelledby="faq-q6">
+                            <p>No. Los precios de cada servicio son de base. El nail art simple suma desde $2.000 y el
+                                personalizado desde $4.000. Consultá por diseños específicos antes de reservar.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- I. FOOTER -->
+    <footer class="site-footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="logo logo--footer">Deco <em>Nails</em></p>
+                <address>Calle Güemes 2450<br>Mar del Plata, Buenos Aires</address>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Horarios</h2>
+                <ul class="footer-list">
+                    <li>Martes y miércoles: 10:00 a 18:00</li>
+                    <li>Jueves y viernes: 10:00 a 19:00</li>
+                    <li>Sábado: 10:00 a 16:00</li>
+                    <li>Lunes y domingo: cerrado</li>
+                </ul>
+            </div>
+
+            <nav aria-label="Pie de página">
+                <h2 class="footer-title">Navegación</h2>
+                <ul class="footer-list">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#servicios">Precios</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h2 class="footer-title">Contacto</h2>
+                <ul class="footer-list">
+                    <li><a href="#reservar" data-whatsapp>Reservar por WhatsApp</a></li>
+                    <li><a href="#" data-instagram>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-legal">
+            <p>Proyecto conceptual de diseño web. Los datos, precios y contactos son ficticios.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
